@@ -21,11 +21,19 @@ and put the dataset folder in the root directory of this project
 
 #### Experiments on one domain sequence:
 ---
-Usage for the Proposed Method of Memory Management with Domain Distribution and Difficulty Awareness
+Usage for training Prototypical network with the Proposed Method of Memory Management with Domain Distribution and Difficulty Awareness
 
 ```python
-python train_meta.py
+python train_protonet.py
 ```
+
+Usage for training ANIL (MAML) with the Proposed Method of Memory Management with Domain Distribution and Difficulty Awareness
+
+```python
+python train_ANIL.py
+```
+
+Note that ANIL-based method currently only contains the domain shift detection component for illustration, other components have not been cleaned yet, but they are almost the same as Protonet-based method. 
 
 ### Reference
 ---
@@ -39,7 +47,9 @@ python train_meta.py
     year      = {2021},
     pages     = {8947-8957}
 }
+```
 
+### Acknowledgment
+---
 
-
-
+Some codes of ANIL-based method are from [GBML](https://github.com/sungyubkim/GBML)   Thanks. 
